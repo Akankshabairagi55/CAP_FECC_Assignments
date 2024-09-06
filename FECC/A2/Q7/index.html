@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td{
+            border:1px solid #E6E6E6;
+        }
+        th,td{
+            padding: 10px;
+            text-align: left;
+            
+           
+        }
+        
+        th{
+            background-color: rgb(7, 149, 7);
+        }
+        .r4{
+            background-color: #E6E6E6;
+        }
+        td, th{
+            border-left:2px solid #AFAFAF;
+            border-right:2px solid#AFAFAF;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr class="row r1">
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price per Unit</th>
+                <th>Description</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr class="row r2">
+                <td>Product 1</td>
+                <td>2</td>
+                <td>$10</td>
+                <td>This is Product 1</td>
+                <td><strong>$20</strong></td>
+            </tr>
+
+            <tr class="row r3">
+                <td>Product 2</td>
+                <td>3</td>
+                <td>$20</td>
+                <td>This is Product 2</td>
+                <td><strong>$60</strong></td>
+            </tr>
+
+            <tr class="row r4">
+                <td colspan="4"><strong>Sum</strong></td>
+                
+                <td><strong>$80</strong></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+    
+</body>
+</html>

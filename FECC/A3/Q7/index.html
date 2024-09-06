@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KreditBee</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        /* border: 1px solid brown; */
+      }
+
+      
+      
+
+      .navImageLogoDiv > img {
+        width: 200px;
+      }
+
+      .navContent {
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+        gap: 30px;
+        
+      }
+      .innerNavContent {
+        display: flex;
+        align-items: baseline;
+     
+        font-weight: 500;
+      }
+      .innerNavContent >a{
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+
+       
+      }
+
+      .innerNavContent > img {
+        height: 10px;
+        width: 14px;
+      }
+      .likeShopping {
+        
+        margin: 10px;
+        
+        
+      }
+      .likeShopping > i {
+        
+        font-size: x-large;
+        padding: 8px;
+        
+        
+      }
+      .signUp{
+        padding: 12px 12px;
+        margin-right: 5px;
+        border-radius: 7px;
+        font-weight: 600;
+        color: black;
+        border: 2px solid #FDB515;
+        background-color: white;
+      }
+
+      .downarrow{
+        color: #FDB515;
+        margin-left: 4px;
+      }
+
+      .firstDiv{
+        max-width: 1280px;
+        margin: auto;
+        /* border: 1px solid red; */
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+      .firstDiv>h1{
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .yellowLine{
+        width: 6%;
+        margin: auto;
+        height: 5px;
+        background-color:#FDB515;
+        margin-top: 10px;
+
+      }
+
+      .Benefits{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 80px;
+
+      }
+
+      .EachBenefits{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 300px;
+        height: 200px;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 4px;
+       
+        
+      }
+
+      .EachBenefits>img{
+        width: 70px;
+        margin-top: 20px;
+      }
+      .EachBenefits>h4{
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      .EachBenefits>p{
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+
+      .secondDiv{
+        max-width: 1280px;
+        margin: auto;
+        /* border: 1px solid red; */
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+      .secondDiv>h3{
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 125px;
+        margin-bottom: 15px;
+      }
+      .secondDiv>h3>i{
+         margin-left: 6px;
+      }
+
+      .mainProductDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .productImageDiv{
+        width: 330px;
+        height: 450px;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        
+
+      }
+      .productImageDiv>img{
+        width: 330px;
+        height: 280px;
+        border-radius: 8px;
+        
+      }
+      .productImageDiv>p{
+        font-size: 14px;
+        margin-top: 15px;
+        margin-left: 10px;
+      }
+      .productImageDiv>h4{
+        margin-top: 15px;
+        margin-left: 10px;
+      }
+
+      .thirdDiv{
+
+        max-width: 1280px;
+        margin: auto;
+        background-color: #FFDE59;
+        padding: 1px; 
+
+      }
+
+      .formDiv{
+        background-color: white;
+        /* border: 1px solid rgb(17, 201, 242); */
+        margin: auto;
+        width: 400px;
+        margin-top: 50px !important;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+        
+      }
+      
+      
+      .formDiv>h2{
+        text-align: center;
+      }
+
+      .formDiv>p{
+        text-align: center;
+        font-weight: 500;
+      }
+      .formDiv>p>a{
+        text-decoration: none;
+        color: rgb(10, 10, 228);
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+        
+        
+      }
+      form>input{
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 1px solid #DDD;
+        
+      
+      }
+
+      form>label{
+        font-weight: 600;
+      }
+
+      form>button{
+        padding: 12px;
+        border-radius: 5px;
+        background-color:#3470E4;
+        color: white;
+        border: none;
+        font-weight: 500;
+
+      }
+      form>p{
+        font-size: 12px;
+        text-align: center;
+      }
+      form>label>span{
+        color: red;
+      }
+      footer{
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0px;
+        color: white;
+      }
+      
+
+      
+
+      
+
+    </style>
+  </head>
+
+  <body>
+    <div class="mainDiv">
+      <nav>
+        <div class="navImageLogoDiv">
+          <img
+            src="https://ik.imagekit.io/krazybee/kreditbee_in/logo_horizontal_BNqOuZWg_.svg"
+            alt="Nav Logo"
+            class="NavLogo"
+          />
+        </div>
+
+        <div class="navContent">
+          <div class="innerNavContent">
+            <a href="#">Loans</a> <i class="downarrow fa-solid fa-angle-down"></i> 
+          </div>
+          <div class="innerNavContent">
+            <a href="#">Calculators</a> <i class="downarrow fa-solid fa-angle-down"></i>
+          </div>
+          <div class="innerNavContent">
+            <a href="#">Credit Report</a>
+          </div>
+          <div class="innerNavContent">
+            <a href="#">Refer & Earn</a>
+          </div>
+          <div class="likeShopping">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+  
+          <button class="signUp">SIGN UP</button>
+        </div>
+
+
+
+      </nav>
+      
+      
+      
+      
+      
+      <div class="firstDiv">
+        <h1>Why choose KreditBee?</h1>
+        <div class="yellowLine"></div>
+        <div class="Benefits">
+          <div class="EachBenefits">
+            <img src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-1.svg" alt="interest_image" class="BenefitsLogo" />
+            <h4 class="BenefitHeading">Lower interest Rates</h4>
+            <p class="BenefitDetail">Get loans for multiple purposes at lower interest rates to suit your needs</p>
+          </div>
+          <div class="EachBenefits">
+            <img src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-2.svg" alt="clock_image" class="BenefitsLogo" />
+            <h4 class="BenefitHeading">Fast Processing and Disbursal</h4>
+            <p class="BenefitDetail">Apply online, check your eligibility and get money directly in your bank in 10 minutes</p>
+          </div>
+          <div class="EachBenefits">
+            <img src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-3.svg" alt="Rs_image" class="BenefitsLogo" />
+            <h4 class="BenefitHeading">Easy Repayment Options</h4>
+            <p class="BenefitDetail">Repay the loan amount in easy EMI with flexible tenure options</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="secondDiv">
+        <h3>Fresh from the blog <i class="fa-solid fa-arrow-right"></i></h3> 
+        <div class="mainProductDiv">
+
+
+          <div class="productImageDiv">
+          <img src="https://i.etsystatic.com/inv/73f1ea/5310016542/inv_620x495.5310016542_ukkxc6qi.jpg?version=0" alt="bed image">
+          <p>Shopping Guides</p>
+          <h4>9 Comfy Throws for Cosy Autumn Vibes</h4>
+          <p>Embrace the snuggling season with stylish throws that will warn your hearts.</p>
+        </div>
+        <div class="productImageDiv">
+          <img src="https://i.etsystatic.com/inv/1b86b2/5514321927/inv_425x340.5514321927_50cniifw.jpg?version=0" alt="bag image">
+          <p>Shopping Guides</p>
+          <h4>14 Beautiful Bags that Express Your Unique Style</h4>
+          <p>Amp up your fashion game with bags that perfectly match your aesthetic.</p>
+        </div>
+        <div class="productImageDiv">
+          <img src="https://i.etsystatic.com/inv/0c0724/5507381345/inv_425x340.5507381345_8imomvyj.jpg?version=0" alt="kids gift image">
+          <p>Gift Ideas</p>
+          <h4>The Best Gift Ideas for Kids of All Ages</h4>
+          <p>Shop the sweetest surprises for all little ones in your family-these gifts for kids will definitely earn you some brownie points.</p>
+        </div>
+          
+          
+          
+          
+          
+          
+        </div>
+        
+      </div>
+
+
+      <div class="thirdDiv">
+        <div class="formDiv">
+          <h2>Create Account</h2>
+          
+          <p>Already have an account? <a href="#">Sign in</a> </p>
+            
+
+          
+          <form  action="#">
+            
+            <label for="name">Full Name <span>*</span></label>
+            <input type="text" id="name" placeholder="Enter full name">
+            
+            <label for="email">Email address <span>*</span></label>
+            <input type="text"  id='email' placeholder="Enter email address">
+            
+            <label for="phoneNo">Phone Number <span>*</span></label>
+            <input type="text"  id='phoneNo' placeholder="Enter your whatsapp number">
+            
+            <label for="referral">Referral Code (Optional)</label>
+            <input type="text"  id="referral" placeholder="Enter referral code">
+            
+            <button>Submit</button>
+            
+            <p>By signing up,I accept the Masai <a href="#">Terms of Service</a> and acknowledge the <a href="#">Privacy Policy</a></p>
+          </form>
+
+          
+          
+        </div>
+        <footer>
+          COPYRIGHT ©ETSY PRIVATE LIMITED. ALL RIGHTS RESERVED
+        </footer>
+      </div>
+
+
+      
+    
+    </div>
+  </body>
+</html>
