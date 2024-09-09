@@ -66,9 +66,46 @@
 
 
         /* for small screen */
-        @media screen and  (max-width:760px) {
+        @media screen and  (max-width:1024px) {
 
+
+
+            select{
+                display: block;
+                border: 1px solid rgba(255, 255, 255, 0.422);
+                width: 100%;
+                background-color: #555555;
+                color: white;
+                padding: 20px;
+                font-size: 18px;
+                border-radius: 8px;
+                -webkit-appearance: none;/* For Chrome, Safari, and Opera */
+                -moz-appearance: none; /* For Firefox */
+                appearance: none;/* Standard syntax */
+
+            }
             
+            nav{
+                padding: 8px;
+                background-color: #444444;
+               
+            }
+
+          .nav-items{
+            display: none;
+          }
+
+          .eachContent{
+
+                
+                flex-direction: column;
+                align-items: center;
+               
+            }
+
+
+
+           
 
 
             
@@ -107,28 +144,28 @@
         
         
         <div class="mainContentDiv">
-            <div class="eachContent">
+            <div class="eachContent" id="home">
                 <img src="https://img.freepik.com/free-vector/blue-house-with-blue-circle-with-blue-outline_530521-1800.jpg?uid=R142324203&ga=GA1.1.239929360.1716840328&semt=ais_hybrid" alt="home page image">
                 <div class="headDes">
                     <h2 style="color: #4CAF50;">Home</h2>
                     <p>Mastering Python, DSA , front-end and back-end development with a goal to become a full-stack developer.</p>
                 </div>
             </div>
-            <div class="eachContent">
+            <div class="eachContent" id="education">
                 <img src="https://img.freepik.com/premium-photo/school-supplies-books-symbolizing-preparation-school-year-education-academic-readiness_87543-51765.jpg?uid=R142324203&ga=GA1.1.239929360.1716840328&semt=ais_hybrid" alt="Education image">
                 <div class="headDes">
                     <h2 style="color: #E91E63;">Education</h2>
                     <p>Graduated with a BSc (C.S.) in 2022 from DAVV University, enhancing expertise in full-stack web development.</p>
                 </div>
             </div>
-            <div class="eachContent">
+            <div class="eachContent" id="projects">
                 <img src="https://img.freepik.com/free-photo/project-management-planning-development-message-box-notification-graphic_53876-120467.jpg?uid=R142324203&ga=GA1.1.239929360.1716840328&semt=ais_hybrid" alt="Project Image">
                 <div class="headDes">
                     <h2 style="color: #FFC107;">Projects</h2>
                     <p>Developed innovative web applications like an insurance app and a Todo List manager, problem-solving skills.</p>
                 </div>
             </div>
-            <div class="eachContent">
+            <div class="eachContent" id="skills">
                 <img src="https://img.freepik.com/free-vector/online-kids_24877-51979.jpg?uid=R142324203&ga=GA1.1.239929360.1716840328&semt=ais_hybrid" alt="Skills image">
                 <div class="headDes">
                     <h2 style="color: #9C27B0;">Skills</h2>
@@ -136,7 +173,7 @@
                 </div>
             </div>
 
-            <div class="eachContent">
+            <div class="eachContent" id="contact">
                 <img src="https://cdn-icons-png.flaticon.com/128/4542/4542053.png" alt="Contact Me Image">
                 <div class="headDes">
                     <h2 style="color: #2196F3;">Contact Me</h2>
