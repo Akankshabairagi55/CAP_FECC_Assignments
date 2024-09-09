@@ -3,13 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            background-color: #333333;
+            color: #00BCD4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav-items{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #444444;
+            color: white;
+            padding: 20px;
+            font-weight: 600;
+        }
+
+        .nav-items>a{
+            text-decoration: none;
+            color: white;
+        }
+
+        select{
+            display: none;
+        }
+
+        .eachContent{
+
+            display: flex;
+            justify-content: space-between;
+            border-radius: 6px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            gap:10px;
+            margin: 20px;
+            padding: 40px;
+        }
+        .eachContent>img{
+            width: 90px;
+            border-radius: 6px;
+        }
+        
+        
+
+        .headDes>h2{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .headDes>p{
+            color:#405164;
+            text-align: center;
+        }
+
+
+        /* for small screen */
+        @media screen and  (max-width:760px) {
+
+            
+
+
+            
+        }
+
+
+    </style>
+
+
 </head>
 
-
-
-
 <body>
+
+
+    <div class="mainContainer">
+        <h1>My Portfolio</h1>
+        <nav>
+            <div class="nav-items">
+                <a href="#home">Home</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+
+
+            <select onchange="location = this.value;">
+                <option value="#home">Home</option>
+                <option value="#education">Education</option>
+                <option value="#projects">Projects</option>
+                <option value="#skills">Skills</option>
+                <option value="#contact">Contact Us</option>
+            </select>
+
+        </nav> 
+        
+        
+        <div class="mainContentDiv">
+            <div class="eachContent">
+                <img src="https://img.freepik.com/free-vector/blue-house-with-blue-circle-with-blue-outline_530521-1800.jpg?uid=R142324203&ga=GA1.1.239929360.1716840328&semt=ais_hybrid" alt="home page image">
+                <div class="headDes">
+                    <h2 style="color: #4CAF50;">Home</h2>
+                    <p>Mastering Python, DSA , front-end and back-end development with a goal to become a full-stack developer.</p>
+                </div>
+            </div>
+            <div class="eachContent">
+                <img src="https://img.freepik.com/premium-photo/school-supplies-books-symbolizing-preparation-school-year-education-academic-readiness_87543-51765.jpg?uid=R142324203&ga=GA1.1.239929360.1716840328&semt=ais_hybrid" alt="Education image">
+                <div class="headDes">
+                    <h2 style="color: #E91E63;">Education</h2>
+                    <p>Graduated with a BSc (C.S.) in 2022 from DAVV University, enhancing expertise in full-stack web development.</p>
+                </div>
+            </div>
+            <div class="eachContent">
+                <img src="https://img.freepik.com/free-photo/project-management-planning-development-message-box-notification-graphic_53876-120467.jpg?uid=R142324203&ga=GA1.1.239929360.1716840328&semt=ais_hybrid" alt="Project Image">
+                <div class="headDes">
+                    <h2 style="color: #FFC107;">Projects</h2>
+                    <p>Developed innovative web applications like an insurance app and a Todo List manager, problem-solving skills.</p>
+                </div>
+            </div>
+            <div class="eachContent">
+                <img src="https://img.freepik.com/free-vector/online-kids_24877-51979.jpg?uid=R142324203&ga=GA1.1.239929360.1716840328&semt=ais_hybrid" alt="Skills image">
+                <div class="headDes">
+                    <h2 style="color: #9C27B0;">Skills</h2>
+                    <p>Proficient in DSA, CSS, HTML, Django, SQL, Git, RESTful APIs, MongoDB, JavaScript, and Python.</p>
+                </div>
+            </div>
+
+            <div class="eachContent">
+                <img src="https://cdn-icons-png.flaticon.com/128/4542/4542053.png" alt="Contact Me Image">
+                <div class="headDes">
+                    <h2 style="color: #2196F3;">Contact Me</h2>
+                    <p>Feel free to reach out for collaboration via email or LinkedIn to discuss innovative projects and opportunities.</p>
+                </div>
+            </div>
+        
+        </div>
+    
+    </div>
     
 </body>
 </html>
